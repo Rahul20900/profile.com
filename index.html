@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Profile</a>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+                <a href="#edu">Education</a>
+                <a href="#extra">Extra</a>
+                <a href="#project">Project</a>
+                <a href="#hob">Hobbies</a>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <section class="about" id="about">
+        <h2>Hello, I am</h2>
+        <h1>Rahul. </h1>
+        <h3>I am front end developer</h3>
+        <a href="#edu">Read More</a>
+      <div class="smi">
+        <a href="https://www.instagram.com/accounts/login/"><img src="incl.png"  width="100"></a>        
+      </div>
+      <div class="sml">
+        <a href="https://in.linkedin.com/"><img src="in2.png"></a>
+      </div>
+        <img src="Capture.PNG">
+
+    </section>
+
+    <section class="edu" id="edu">
+        <h1>EDUCATION</h1>
+
+        <div class="inst">
+
+            <div class="school">
+                <img src="nhps.jpg" width="400" height="200">
+                <h2>Completed 10+2 <br>from<br> New Happy Public School,Yamuna Nagar<br>Affiliated to CBSE<br>New Delhi
+                </h2>
+            </div>
+
+
+
+
+            <div class="college">
+                <img src="HEC.jpeg" width="400" height="200">
+                <h2>Pursuing B.Tech in <br>Computer Science and engineering <br> from<br>Haryana Engineering college,
+                    Jagadhri <br>affiliated to Kuruskhetra University </h2>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="trng" id="extra">
+        <h1>Extra Training Undergone</h1>
+        <div class="extra">
+            <div class="py">
+                <img src="py.png" width="250" height="200px">
+                <p>Undergone 4 weeks training in<br> Python Programming Language<br> from <br>Dec 2020 to Jan 2021<br>
+                    at<br> National institute of Electronics and<br>
+                    Information and technology,<br> Haridwar </p>
+            </div>
+
+
+            <div class="cl">
+
+                <img src="c2.PNG" width="250" height="200px">
+                <p>Undergone 1 month Course in<br> C Programming Language <br>in July 2019<br> from <br> Kalpana Chawla
+                    Computech Pvt Ltd, <br>Yamuna Nagar </p>
+            </div>
+
+            <div class="web">
+
+                <img src="aark.png" width="250" height="200px">
+                <p>Undergoing 3 month Internship in<br> Web Development<br> from<br> Feb 2021 to present<br> at<br> AARK
+                    technology Hub Pvt Ltd </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="project" id="project">
+        <h1>PROJECT WORK DONE</h1>
+        <p>Following are some Projects which i have made during my training period and in college time.</p>
+        <div class="pwd">
+
+            <div class="emp">
+                <img src="cpp.png" width="250" height="200">
+                <h2>Employee Record System</h2>
+                <p>I have designed a project in c language named as employee record system <br>which is used to
+                    record the information of empoloyees in the organisation.<br>This is very simple and project and
+                    easy to understand. </p>
+            </div>
+
+            <div class="va">
+                <img src="python.jpg" width="250" height="200">
+                <h2>Virtual Assistant</h2>
+                <p>I have designed a Virtual Assistant named as SEVEN in Python programming language which is used to
+                    get the desired out by our choice.<br>It takes the input from the user in audio form and get the
+                    output as asked by the user. </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="hobbies" id="hob">
+        <h1>HOBBIES</h1>
+        <div class="h1">
+            <div class="cg">
+                <img src="cg.jpg" width="252" height="300">
+                <h2>Gaming</h2>
+            </div>
+            <div class="bb">
+                <img src="bb.jpg" width="252" height="300">
+                <h2>Playing Cricket</h2>
+            </div>
+            <div class="tvl">
+                <img src="tvl.jpg" width="252" height="300">
+                <h2>Traverling</h2>
+            </div>
+            <div class="ph">
+                <img src="ph.jpg" width="252" height="300">
+                <h2>Photography</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <div class="loc">
+            <img src="tl.png">
+            <a
+                href="https://www.google.com/maps/place/Yamuna+Nagar,+Haryana/@30.1321679,77.2351926,13z/data=!3m1!4b1!4m5!3m4!1s0x390ef99b8b19ea25:0xfc76e2b1f391902!8m2!3d30.1290485!4d77.2673901">Yamuana Nagar, Haryana</a>
+            <!-- <h3>Yamuna Nagar, <br>Haryana</h3> -->
+        </div>
+
+        <div class="phone">
+            <img src="0000.png">
+            <h3>+91-9876543210</h3>
+        </div>
+
+        <div class="mail">
+            <img src="gm.png">
+            <a href="https://www.google.com/intl/en-GB/gmail/about/# ">rahul@gmail.com</a>
+            
+        </div>
+
+    </section>
+
+    <!-- *****s***************Java script*********************************** -->
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    <!-- ******************************************************* -->
+
+
+
+</body>
+
+</html>
